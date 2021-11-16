@@ -1,0 +1,74 @@
+@import 'variables';
+@import 'mixins';
+@import 'responsive';
+
+body{
+    margin:0;
+    
+}
+
+nav{
+    margin:10px;
+    overflow: hidden;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+    display:flex;
+    justify-content:end;
+    align-items:center; 
+    height:3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .navitem{
+        @include navBar();
+        &:hover .navbutton-content{
+            display: block;
+        }
+    }
+    .navbutton-content{
+
+        @include navContent()
+    }
+
+    @include tablet{
+        background-color: var(--textColor);
+    }
+}
+
+.container1{
+    text-align: center;
+    margin-top: 100px;
+    color: var(--textColor);
+    .h1{
+        font-size:40px;
+        text-transform: uppercase;
+    }
+    .button{
+        font-size: 20px;
+        /* border:solid 2px ; */
+        border-radius: 30px;
+        border-color:var(--primaryColor);
+        text-decoration:none;
+        outline: none;
+        color: var(--textColor);
+        background-color: var(--secondaryColor);
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin-right: 10px; /* Important for vertical align on mobile phones */
+        padding:5px;
+    }
+}
+.cwake1{
+    margin-top: 100px;
+    color: var(--textColor);
+    justify-content: space-around;
+    p{
+        
+       margin-right: 10px;;
+    }
+    img{
+        margin-right: 80px;
+    }
+}
+  
+  
+  
+

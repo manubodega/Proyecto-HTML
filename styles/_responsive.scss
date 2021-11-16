@@ -1,0 +1,29 @@
+$layout-mobile: 576px;
+$layout-tablet: 768px;
+$layout-laptop: 992px;
+$layout-pc: 1200px;
+
+
+@mixin mobile {
+    @media (max-width: #{layout-mobile}){
+        @content; /* Caja vacía que llamo en el codigo principal para decir que vamos a incluir algo dentro */
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{layout-tablet}){
+        @content; /* Caja vacía que llamo en el codigo principal para decir que vamos a incluir algo dentro */
+    }
+}
+
+@mixin laptop {
+    @media (max-width: #{layout-laptop}){
+        @content; /* Caja vacía que llamo en el codigo principal para decir que vamos a incluir algo dentro */
+    }
+}
+
+@mixin pc {
+    @media (max-width: #{layout-pc}){
+        @content; /* Caja vacía que llamo en el codigo principal para decir que vamos a incluir algo dentro */
+    }
+}

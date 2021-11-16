@@ -1,0 +1,27 @@
+/*********** VARIABLES ***********/
+
+$summer-primaryColor: #B5EAEA;
+$summer-secondaryColor: #EDF6E5;
+$summer-textColor: #F38BA0;
+$summer-otherColor: #FFBCBC;
+
+$nature-primaryColor: #28B5B5;
+$nature-secondaryColor: #9FE6A0;
+$nature-textColor: #8FD9A8;
+$nature-otherColor: #D2E69C;
+
+.summer-theme {
+    --primaryColor: #B5EAEA;
+    --secondaryColor: #EDF6E5;
+    --textColor: #F38BA0;
+    --otherColor: #FFBCBC;
+}
+
+.nature-theme {
+    --primaryColor: #28B5B5;
+    --secondaryColor: #9FE6A0;
+    --textColor: #8FD9A8;
+    --otherColor: #D2E69C;
+}
+
+/* $primaryFont:'Zen Antique', serif; */

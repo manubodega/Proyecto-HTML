@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="navitem">
+            <a name='home' href="/index.html">
+                <button class="navbutton">Home</button>
+            </a>
+        </div>
+
+        <div class="navitem">
+            <button class="navbutton">Deportes
+              <!-- <i class="fa fa-caret-down"></i> -->
+            </button>
+            <div class="navbutton-content">
+                <a name='Wakesurf' href="/main/sports/wakesurf.html">WakeSurf</a>
+                <a href="#">Otros Deportes</a>
+            </div>
+        </div>
+
+        <div class="navitem">
+            <a name='media' href="/main/media/media.html">
+                <button class="navbutton">Perfil</button>
+            </a>
+        </div>
+
+        <div class="navitem">
+            <button class="navbutton">Idioma
+              <!-- <i class="fa fa-caret-down"></i> -->
+            </button>
+            <div class="navbutton-content">
+                <a>Español</a>
+                <a>Inglés</a>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <form autocomplete="off" method="get" action="https://reqres.in/api/users?page=2">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="name">Nombre:</label>
+            <input id="name" name="name" type ="text" required>
+
+            <label for="surname">Apellido:</label>
+            <input id="surname" name="surname" type ="text" required>
+
+            <label for="city">Selecciona tu ciudad</label>
+            <select id="city" name="city">
+                <option value="madrid">Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="granada">Granada</option>
+                <option value="valencia">Valencia</option>
+            </select>
+            <br>
+
+            <label for="email">Email:</label>
+            <input id="email" name="email" type ="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+        </fieldset>
+
+    </form>
+</body>
+</html>

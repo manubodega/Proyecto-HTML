@@ -1,0 +1,36 @@
+/*********** NAVBAR ***********/
+@mixin navContent(){
+    display: none;
+    position: fixed;
+    background-color: var(--primaryColor);
+    a{
+        float: none;
+        color: var(--textColor);
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        &:hover{
+            background-color: var(--otherColor);
+        }
+    }
+}
+@mixin navButton(){
+    .navbutton {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        color: var(--textColor);
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin-right: 10px; /* Important for vertical align on mobile phones */
+      }
+}
+@mixin navBar(){
+    @include navButton();
+    &:hover{
+        display: block;
+        background-color: var(--otherColor);
+    }
+}
+

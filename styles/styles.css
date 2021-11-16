@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*********** VARIABLES ***********/
+.summer-theme {
+  --primaryColor: #B5EAEA;
+  --secondaryColor: #EDF6E5;
+  --textColor: #F38BA0;
+  --otherColor: #FFBCBC;
+}
+
+.nature-theme {
+  --primaryColor: #28B5B5;
+  --secondaryColor: #9FE6A0;
+  --textColor: #8FD9A8;
+  --otherColor: #D2E69C;
+}
+
+/* $primaryFont:'Zen Antique', serif; */
+/*********** NAVBAR ***********/
+body {
+  margin: 0;
+}
+
+nav {
+  margin: 10px;
+  overflow: hidden;
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav .navitem .navbutton {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin-right: 10px;
+  /* Important for vertical align on mobile phones */
+}
+
+nav .navitem:hover {
+  display: block;
+  background-color: var(--otherColor);
+}
+
+nav .navitem:hover .navbutton-content {
+  display: block;
+}
+
+nav .navbutton-content {
+  display: none;
+  position: fixed;
+  background-color: var(--primaryColor);
+}
+
+nav .navbutton-content a {
+  float: none;
+  color: var(--textColor);
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav .navbutton-content a:hover {
+  background-color: var(--otherColor);
+}
+
+@media (min-width: layout-tablet) {
+  nav {
+    background-color: var(--textColor);
+    /* Caja vacía que llamo en el codigo principal para decir que vamos a incluir algo dentro */
+  }
+}
+
+.container1 {
+  text-align: center;
+  margin-top: 100px;
+  color: var(--textColor);
+}
+
+.container1 .h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.container1 .button {
+  font-size: 20px;
+  /* border:solid 2px ; */
+  border-radius: 30px;
+  border-color: var(--primaryColor);
+  text-decoration: none;
+  outline: none;
+  color: var(--textColor);
+  background-color: var(--secondaryColor);
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin-right: 10px;
+  /* Important for vertical align on mobile phones */
+  padding: 5px;
+}
+
+.cwake1 {
+  margin-top: 100px;
+  color: var(--textColor);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cwake1 p {
+  margin-right: 10px;
+}
+
+.cwake1 img {
+  margin-right: 80px;
+}
+/*# sourceMappingURL=styles.css.map */
